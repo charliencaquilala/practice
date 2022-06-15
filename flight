@@ -1,0 +1,93 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//a program that first greets the users
+		Console.WriteLine("Good day! This is (name of the airline) automated online flight booking");
+	Console.WriteLine("Welcome!");
+		Console.WriteLine("Please fill up the necessary information to proceed");
+		// privacy act
+		Console.WriteLine("Name of the person registering: *FIRSTNAME, M.I, SURNAME");
+		String n = Console.ReadLine();
+		Console.WriteLine("Address: ");
+		Console.ReadLine();
+		Console.WriteLine("Date of Birth: ");
+		Console.ReadLine();
+		Console.WriteLine("Email Address: ");
+		Console.ReadLine();
+		Console.WriteLine("Phone number: ");
+		Console.ReadLine();
+		Console.WriteLine(" ");
+		// indicate all informations needed
+		Console.WriteLine("Welcome!" + n + "to (name of the airline) enter yes if the information you have entered is right and truthful and you are ready to proceed");
+		String ch = Console.ReadLine();
+		if (ch == "no" || ch=="No" || ch=="NO"){
+			Console.WriteLine("Repeat the process");
+			return; // try making it redo the first step
+		}
+		else if (ch == "yes" || ch=="Yes" || ch=="YES"){
+			Console.WriteLine("Hi !" +n + "Pease proceed");
+		Console.WriteLine("Number of Passengers");
+		Console.ReadLine();
+		Console.WriteLine("Count of minors going on board");
+		Console.ReadLine();
+		Console.WriteLine("Please select the details for your online booking");
+		Console.WriteLine("0 Cebu");
+		Console.WriteLine("0 Manila");
+		Console.WriteLine("0 Bicol");
+		Console.ReadLine();
+		Console.WriteLine(" "); // not sure abt the classes tho
+		Console.WriteLine("Classes");
+		Console.WriteLine("VIP");
+		Console.WriteLine("Class A");
+		Console.WriteLine("Economic");
+		Console.ReadLine();
+		Console.WriteLine(" ");
+		Console.WriteLine("Please select the time of your appointment");
+		Console.WriteLine("6:00 AM");
+		Console.WriteLine("7:00 AM");
+		Console.WriteLine("8:00 AM");
+		Console.WriteLine("9:00 AM");
+        Console.WriteLine("10:00 AM");
+		Console.WriteLine("11:00 AM");
+		Console.WriteLine("1:00 PM");
+		Console.WriteLine("2:00 PM");
+		Console.WriteLine("3:00 PM");
+		Console.WriteLine("4:00 PM");
+		Console.WriteLine("5:00 PM");
+		Console.WriteLine("6:00 PM");
+		Console.ReadLine();
+		Console.WriteLine(" ");
+		Console.WriteLine("Flight additional details: ");
+		Console.WriteLine("Mode of Payment: ");
+		Console.WriteLine("a )Bank Transfer");
+		Console.WriteLine("b )Gcash");
+		Console.WriteLine("c )Cash");
+		String choice = Console.ReadLine();
+		if (choice == "a" || choice == "A"){
+			Console.WriteLine("Please enter your bank account information");
+			Console.WriteLine("Account Number");
+			Console.ReadLine();
+			Console.WriteLine("Account Pin");
+			Console.ReadLine();
+		}
+	  else if (choice == "b" || choice == "B"){
+			Console.WriteLine("Please enter your account");
+			Console.WriteLine("Account Number");
+			Console.ReadLine();
+			Console.WriteLine("Account Name");
+			Console.ReadLine();
+	}
+		else if (choice == "c" || choice == "C"){
+			Console.WriteLine("Kindly settle payment before the date of the exact flight");
+		}
+		else{
+			Console.WriteLine("Invalid Choice");
+			return;
+		}
+		Console.WriteLine("Thank you! You are now settled!");
+		Console.WriteLine("It's great having you here!");
+		}
+}}
